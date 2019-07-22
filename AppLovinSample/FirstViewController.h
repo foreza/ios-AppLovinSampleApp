@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AppLovinSDK/AppLovinSDK.h>
 
 @interface FirstViewController : UIViewController
 
+@property (nonatomic, strong) ALAdView *adView;     // Banner adView
 
 @end
 

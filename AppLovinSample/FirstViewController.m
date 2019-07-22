@@ -24,6 +24,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+
+    // Put the banner near the bottom
+    self.adView = [[ALAdView alloc] initWithFrame: CGRectMake((self.view.bounds.size.width - 320) / 2, self.view.bounds.size.height - 150, 320, 50)
+                                         size: [ALAdSize sizeBanner]
+                                          sdk: [ALSdk shared]];
+    
+    // Load an ad into the ad view
+    [self.adView loadNextAd];
+    
+    // Add it to the view
+    [self.view addSubview: self.adView];
+    
   
 }
 
