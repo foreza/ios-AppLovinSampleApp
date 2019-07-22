@@ -16,30 +16,26 @@
 
 NSString* kLogTag = @"FirstViewController";
 
+NSString *bannerZoneID = @"1f4255944afd12df";
+NSString *int1ZoneID = @"7317b8287164ccb9";
+NSString *int2ZoneID = @"855c5b0b8889a103";
 
-// Todo: implement
-// banner 1f4255944afd12df
-// interstitial     7317b8287164ccb9 and 855c5b0b8889a103
-// rewarded 27207f2172b864c1 and 49557b5ae8beb006
+Boolean interstitial1Loaded = false;
+Boolean interstitial2Loaded = false;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     [self initAndLoadBanner];
-
-    
 }
 
 
 - (void) initAndLoadBanner {
     
-    
-    self.adView = [[ALAdView alloc] initWithSize: [ALAdSize sizeBanner] zoneIdentifier: @"1f4255944afd12df"];
-    
+    self.adView = [[ALAdView alloc] initWithSize: [ALAdSize sizeBanner] zoneIdentifier: bannerZoneID];
     self.adView.frame = CGRectMake((self.view.bounds.size.width - 320) / 2, self.view.bounds.size.height - 150, 320, 50);
 
-    
     // Attach delegates
     self.adView.adLoadDelegate = self;
     self.adView.adDisplayDelegate = self;
@@ -50,8 +46,6 @@ NSString* kLogTag = @"FirstViewController";
     
     // Add it to the view
     [self.view addSubview: self.adView];
-    
-    
 }
 
 
