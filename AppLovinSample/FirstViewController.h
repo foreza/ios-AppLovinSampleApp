@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <AppLovinSDK/AppLovinSDK.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <ALAdLoadDelegate, ALAdDisplayDelegate, ALAdViewEventDelegate>
 
-@property (nonatomic, strong) ALAdView *adView;     // Banner adView
+@property (strong, nonatomic) ALAdView *adView;     // Banner adView
 
 @end
 
