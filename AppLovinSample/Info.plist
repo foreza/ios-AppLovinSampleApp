@@ -46,6 +46,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>AppLovinSdkKey</key>
+	<string>4F9zxUam64Pf5zxH-gRzfPKqxP1TS9Ji2UaNAJC0vdsDP148x3Lgy1hTDCTqus07FiIX5pPzVyfTi6gwqtz0KB</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

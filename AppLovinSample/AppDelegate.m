@@ -16,7 +16,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    [ALSdk initializeSdk];  // Init SDK using the app key defined in Info.plist
+    
     return YES;
 }
 

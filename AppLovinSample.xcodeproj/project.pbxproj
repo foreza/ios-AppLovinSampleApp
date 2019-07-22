@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1348516D22E55650002F364F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348516322E55650002F364F /* CoreTelephony.framework */; };
+		1348516E22E55650002F364F /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348516422E55650002F364F /* AdSupport.framework */; };
+		1348516F22E55650002F364F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348516522E55650002F364F /* libz.tbd */; };
+		1348517022E55650002F364F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348516622E55650002F364F /* AVFoundation.framework */; };
+		1348517122E55650002F364F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348516722E55650002F364F /* CoreGraphics.framework */; };
+		1348517222E55650002F364F /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348516822E55650002F364F /* SafariServices.framework */; };
+		1348517322E55650002F364F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348516922E55650002F364F /* WebKit.framework */; };
+		1348517422E55650002F364F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348516A22E55650002F364F /* UIKit.framework */; };
+		1348517522E55650002F364F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348516B22E55650002F364F /* StoreKit.framework */; };
+		1348517622E55650002F364F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1348516C22E55650002F364F /* CoreMedia.framework */; };
 		13645A4922E1998700064FC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A4822E1998700064FC7 /* AppDelegate.m */; };
 		13645A4C22E1998700064FC7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A4B22E1998700064FC7 /* FirstViewController.m */; };
 		13645A4F22E1998700064FC7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A4E22E1998700064FC7 /* SecondViewController.m */; };
@@ -14,9 +24,20 @@
 		13645A5422E1998800064FC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13645A5322E1998800064FC7 /* Assets.xcassets */; };
 		13645A5722E1998800064FC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13645A5522E1998800064FC7 /* LaunchScreen.storyboard */; };
 		13645A5A22E1998800064FC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13645A5922E1998800064FC7 /* main.m */; };
+		4AC52DB0DC2BAE829A8D2F46 /* libPods-AppLovinSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEC7440219634BB4D3B320E /* libPods-AppLovinSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1348516322E55650002F364F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1348516422E55650002F364F /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		1348516522E55650002F364F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1348516622E55650002F364F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1348516722E55650002F364F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1348516822E55650002F364F /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		1348516922E55650002F364F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1348516A22E55650002F364F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1348516B22E55650002F364F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		1348516C22E55650002F364F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		13645A4422E1998700064FC7 /* AppLovinSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppLovinSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13645A4722E1998700064FC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		13645A4822E1998700064FC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +50,9 @@
 		13645A5622E1998800064FC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13645A5822E1998800064FC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13645A5922E1998800064FC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69992B7450717DE77765B3D3 /* Pods-AppLovinSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinSample.debug.xcconfig"; path = "Target Support Files/Pods-AppLovinSample/Pods-AppLovinSample.debug.xcconfig"; sourceTree = "<group>"; };
+		6EDD9F3D4625F7371E258EEF /* Pods-AppLovinSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppLovinSample.release.xcconfig"; path = "Target Support Files/Pods-AppLovinSample/Pods-AppLovinSample.release.xcconfig"; sourceTree = "<group>"; };
+		AEEC7440219634BB4D3B320E /* libPods-AppLovinSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppLovinSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +60,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1348516D22E55650002F364F /* CoreTelephony.framework in Frameworks */,
+				1348516E22E55650002F364F /* AdSupport.framework in Frameworks */,
+				1348516F22E55650002F364F /* libz.tbd in Frameworks */,
+				1348517022E55650002F364F /* AVFoundation.framework in Frameworks */,
+				1348517122E55650002F364F /* CoreGraphics.framework in Frameworks */,
+				1348517222E55650002F364F /* SafariServices.framework in Frameworks */,
+				1348517322E55650002F364F /* WebKit.framework in Frameworks */,
+				1348517422E55650002F364F /* UIKit.framework in Frameworks */,
+				1348517522E55650002F364F /* StoreKit.framework in Frameworks */,
+				1348517622E55650002F364F /* CoreMedia.framework in Frameworks */,
+				4AC52DB0DC2BAE829A8D2F46 /* libPods-AppLovinSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +82,8 @@
 			children = (
 				13645A4622E1998700064FC7 /* AppLovinSample */,
 				13645A4522E1998700064FC7 /* Products */,
+				FEA9ED3645D0ED9B1360A4B0 /* Pods */,
+				26C471A6A46FF4B5C5F43417 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +113,33 @@
 			path = AppLovinSample;
 			sourceTree = "<group>";
 		};
+		26C471A6A46FF4B5C5F43417 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1348516422E55650002F364F /* AdSupport.framework */,
+				1348516622E55650002F364F /* AVFoundation.framework */,
+				1348516722E55650002F364F /* CoreGraphics.framework */,
+				1348516C22E55650002F364F /* CoreMedia.framework */,
+				1348516322E55650002F364F /* CoreTelephony.framework */,
+				1348516522E55650002F364F /* libz.tbd */,
+				1348516822E55650002F364F /* SafariServices.framework */,
+				1348516B22E55650002F364F /* StoreKit.framework */,
+				1348516A22E55650002F364F /* UIKit.framework */,
+				1348516922E55650002F364F /* WebKit.framework */,
+				AEEC7440219634BB4D3B320E /* libPods-AppLovinSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEA9ED3645D0ED9B1360A4B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69992B7450717DE77765B3D3 /* Pods-AppLovinSample.debug.xcconfig */,
+				6EDD9F3D4625F7371E258EEF /* Pods-AppLovinSample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13645A5D22E1998800064FC7 /* Build configuration list for PBXNativeTarget "AppLovinSample" */;
 			buildPhases = (
+				3A3AA73A88027A95D8B477D6 /* [CP] Check Pods Manifest.lock */,
 				13645A4022E1998700064FC7 /* Sources */,
 				13645A4122E1998700064FC7 /* Frameworks */,
 				13645A4222E1998700064FC7 /* Resources */,
@@ -140,6 +205,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A3AA73A88027A95D8B477D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppLovinSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13645A4022E1998700064FC7 /* Sources */ = {
@@ -230,6 +320,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -282,6 +373,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -289,6 +381,7 @@
 		};
 		13645A5E22E1998800064FC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69992B7450717DE77765B3D3 /* Pods-AppLovinSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -306,6 +399,7 @@
 		};
 		13645A5F22E1998800064FC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EDD9F3D4625F7371E258EEF /* Pods-AppLovinSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
