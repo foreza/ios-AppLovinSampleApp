@@ -23,7 +23,8 @@ NSString *rewarded2ZoneID = @"b7054b025dec1fc8";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self changeUIStateForRewardedNotReady];
 }
 
 - (IBAction)actionLoadAndShowRewarded:(id)sender {
@@ -31,26 +32,45 @@ NSString *rewarded2ZoneID = @"b7054b025dec1fc8";
 }
 
 - (IBAction)actionPreloadRewarded:(id)sender {
-    // TODO
+    [self preloadRewarded];
 }
 
 - (IBAction)actionShowRewarded:(id)sender {
-    // TODO
+    
+    if ([self.incentivizedInterstitial2 isReadyForDisplay]) {
+        [self showRewarded];
+    }
 }
 
 
 - (void) changeUIStateForRewardedNotReady {
-    // TODO
+    [self.buttonShowRewarded setHidden:true];
+    [self.buttonPreloadRewarded setHidden:false];
 }
 
 - (void) changeUIStateForRewardedIsReady {
-    // TODO
-}
+    [self.buttonShowRewarded setHidden:false];
+    [self.buttonPreloadRewarded setHidden:true];}
 
 
 - (void) loadAndShowRewarded {
     self.incentivizedInterstitial1 = [[ALIncentivizedInterstitialAd alloc] initWithZoneIdentifier: rewarded1ZoneID];
     [self.incentivizedInterstitial1 preloadAndNotify:self];
+}
+
+- (void) preloadRewarded {
+    
+    self.incentivizedInterstitial2 = [[ALIncentivizedInterstitialAd alloc] initWithZoneIdentifier: rewarded2ZoneID];
+    [self.incentivizedInterstitial2 preloadAndNotify:self];
+    
+}
+
+- (void) showRewarded {
+    
+    self.incentivizedInterstitial2.adDisplayDelegate = self;
+    self.incentivizedInterstitial2.adVideoPlaybackDelegate = self;
+    [self.incentivizedInterstitial2 showAndNotify: self];
+    
 }
 
 #pragma mark - <ALAdLoadDelegate Methods>
@@ -68,6 +88,9 @@ NSString *rewarded2ZoneID = @"b7054b025dec1fc8";
         self.incentivizedInterstitial1.adDisplayDelegate = self;
         self.incentivizedInterstitial1.adVideoPlaybackDelegate = self;
         [self.incentivizedInterstitial1 showAndNotify: self];
+    } else if ([ad.zoneIdentifier isEqualToString:rewarded2ZoneID]) {
+        rewarded2Loaded = true;
+        [self changeUIStateForRewardedIsReady];
     }
     
 }
@@ -113,19 +136,34 @@ NSString *rewarded2ZoneID = @"b7054b025dec1fc8";
 #pragma mark - <ALAdRewardDelegate Methods>
 
 - (void)rewardValidationRequestForAd:(nonnull ALAd *)ad didExceedQuotaWithResponse:(nonnull NSDictionary *)response {
-    // TODO
+    NSString *msg = [NSString stringWithFormat:@"%@%@%@", kLogTag2, @" rewardValidationRequestForAd didExceedQuotaWithResponse for: ", ad.zoneIdentifier];
+    NSLog(@"%@", msg);
 }
 
 - (void)rewardValidationRequestForAd:(nonnull ALAd *)ad didFailWithError:(NSInteger)responseCode {
-    // TODO
+    
+//    kALErrorCodeIncentivizedUserClosedVideo
+//    kALErrorCodeIncentivizedValidationNetworkTimeout
+//    kALErrorCodeIncentivizedUnknownServerError
+//    kALErrorCodeIncentiviziedAdNotPreloaded
+    
+    NSString *msg = [NSString stringWithFormat:@"%@%@%ld", kLogTag2, @" rewardValidationRequestForAd didFailWithError with: ", (long)responseCode];
+    NSLog(@"%@", msg);
 }
 
 - (void)rewardValidationRequestForAd:(nonnull ALAd *)ad didSucceedWithResponse:(nonnull NSDictionary *)response {
-    // TODO
+
+    NSString *currencyName = response[@"currency"];
+    NSString *amountGivenString = response[@"amount"];
+    
+    NSString *msg = [NSString stringWithFormat:@"%@%@%@%@%@%@", kLogTag2, @" rewardValidationRequestForAd for: ", ad.zoneIdentifier, @" earned: ", amountGivenString, currencyName];
+    NSLog(@"%@", msg);
 }
 
 - (void)rewardValidationRequestForAd:(nonnull ALAd *)ad wasRejectedWithResponse:(nonnull NSDictionary *)response {
-    // TODO
+    NSString *msg = [NSString stringWithFormat:@"%@%@%@", kLogTag2, @" rewardValidationRequestForAd wasRejectedWithResponse for ", ad.zoneIdentifier];
+    NSLog(@"%@", msg);
+
 }
 
 
